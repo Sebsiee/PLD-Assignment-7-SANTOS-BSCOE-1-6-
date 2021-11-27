@@ -16,6 +16,9 @@ def passwordValidation():
         elif not re.search("[0-9]", password):
             validator = +1
             print("Your password should have a number.")
+        elif not re.search("[!@#$%^&*()_+]", password):
+            validator = +1
+            print("Your password should have a special character. Example: !@#$%^&*()_+ ")
         else:
             validator = 0
             print("Output: Valid Password")
