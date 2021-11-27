@@ -14,7 +14,7 @@ def wordCounter():
     countWords = len(sentence.split())
     print ("Words: " +  str(countWords))
     print("Vowels:", vowels)
-    print("Consonants:", consonants)
+    print("Consonants:", consonants - sentence.count(" "))
 
 def goodbye():
     print()
