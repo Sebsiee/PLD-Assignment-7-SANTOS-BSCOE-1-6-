@@ -5,6 +5,11 @@ def wordCounter():
     sentence = input("Input: ")
     vowels = 0
     consonants = 0
+    for i in sentence:
+        if(i == "a" or i == "e" or i == "i" or i == "o" or i == "u"):
+            vowels = vowels+1
+        else:
+            consonants = consonants+1
     print ("Output: " +  sentence)
     print("Vowels:", vowels)
     print("Consonants:", consonants)
