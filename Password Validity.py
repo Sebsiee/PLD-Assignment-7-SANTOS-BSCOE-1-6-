@@ -26,6 +26,11 @@ def passwordValidation():
     
     if validator == 1:
         print("Output: Not a Valid Password")
+    
+def goodbye():
+    print()
+    print("Thank you for using my program!")
 
 introduction()
 passwordValidation()
+goodbye()
